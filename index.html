@@ -1,46 +1,447 @@
-<!doctype html>
+<!DOCTYPE html>
+<html data-theme="light" lagn="ko">
 
-<html>
 <head>
-  <meta charset="utf-8">
-  <title>HTML Example</title>
-  
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/about.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF">
+
+  <!--/* FAV */-->
+  <link rel=" apple-touch-icon" sizes="180x180" href="img/fav-heart/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/fav-heart/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/fav-heart/favicon-16x16.png">
+  <link rel="manifest" href="img/fav-heart/site.webmanifest">
+
+  <!--/* GOOGLE FONT */-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=La+Belle+Aurore&family=Mrs+Saint+Delafield&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Noto+Serif+KR:wght@200..900&family=Oooh+Baby&family=Sacramento&family=Sedan+SC&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Whisper&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!--/* PICO */-->
+  <link rel="stylesheet" href="picocss/css/pico.colors.min.css" />
+  <link rel="stylesheet" href="picocss/css/pico.zinc.min.css" />
+
+  <!--/* SWIPER */-->
+  <link rel="stylesheet" href="swiper/css/swiper.css" />
+  <link rel="stylesheet" href="css/wedding.min.css" />
+
+  <!--/* CUSTOM HEAD */-->
+  <title>수민 ♡ 슬기 결혼합니다!</title>
+
+  <meta name="theme-color" content="#E0E3E7">
+  <meta name="title" content="수민 ♡ 슬기 결혼합니다!">
+  <meta name="description" content="2024. 8. 4 일요일 오후 4시 더채플앳논현 6F 라포레홀">
+
+  <meta property="og:title" content="수민 ♡ 슬기 결혼합니다!">
+  <meta property="og:url" content="https://수민슬기.site/">
+  <meta property="og:image" content="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/DSCF8383.JPG">
+  <meta property="og:description" content="2024. 8. 4 일요일 오후 4시 더채플앳논현 6F 라포레홀">
+
 </head>
+
 <body>
-  <section class="center">
-    <aside class="sidebar"></aside>
-    
-    <section class="contents">
-      <!-- page will be include here -->
-      <section id="page" class="page">
-        <section id="about">
-          <section class="frame">
-            <h2><b>HELLO</b>WORLD</h2>
-            
-            <div class="cat">
-              <div class="picture">
-                <img src="images/mew.png" alt="Mew">
-              </div>
-              <small>Mew</small>
-            </div>
-            <div class="cat">
-              <div class="picture">
-                <img src="images/siesta.png" alt="Siesta">
-              </div>
-              <small>Siesta</small>
-            </div>
-            <div class="cat">
-              <div class="picture">
-                <img src="images/tiger.png" alt="Tiger">
-              </div>
-              <small>Tiger</small>
-            </div>
-          </section>
-        </section>
-      </section>
-    </section>
+  <div id="snackbar-wrap">
+    <div id="snackbar"></div>
+  </div>
+  
+  <div id="blur" class="blur"></div>
+  <section id="first">
+    <div class="title-wrap">
+      <h1>We Getting Married</h1>
+      <div class="disc">
+        <p>Your presence is requested to celebrate<br />the wedding of</p>
+      </div>
+    </div>
+
+    <div class="photo-wrap">
+      <div class="photo-left">
+        <div class="photo">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400062.jpeg" alt="left">
+        </div>
+        <div class="name">
+          <h1>Park sumin</h1>
+        </div>
+      </div>
+      <div class="photo-right">
+        <div class="photo">
+          <img class="" src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400063.jpeg" alt="right">
+        </div>
+        <div class="name">
+          <h1>Cha seulgi</h1>
+        </div>
+      </div>
+    </div>
   </section>
+  <div class="fixed-photo" id="fixed-photo">
+    <div class="bg">
+      <div class="photo"></div>
+    </div>
+  </div>
+  <section id="second">
+    <div class="text main poem">
+      <p>예쁜 예감이 들었다</p>
+      <p>우리는 언제나 손을 잡고 있게 될 것이다</p>
+      <p>이이체 - 연인 中</p>
+    </div>
+    <div class="photo">
+      <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/DSCF8383.JPG" alt="main-image">
+    </div>
+    <div class="text main">
+      <p>수민 ♡ 슬기 결혼합니다!</p>
+    </div>
+  </section>
+  <section id="third">
+    <div class="text main">
+      <p>가장 아름답고 행복한 순간,</p>
+      <p>소중한 분을 초대합니다.</p>
+    </div>
+    <div class="calender">
+      <p class="date">2024. 8. 4</p>
+      <p class="date time">일요일 오후 4시</p>
+      <p class="date time">더채플앳논현 6F 라포레홀</p>
+      <hr>
+      <table id="calendar-table">
+        <tbody>
+          <tr>
+            <th class="sunday">Su</th>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th class="saturday">Sa</th>
+          </tr>
+          <tr>
+            <td class="sunday"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span>1</span></td>
+            <td><span>2</span></td>
+            <td class="saturday"><span>3</span></td>
+          </tr>
+          <tr>
+            <td class="sunday"><span class="due">4</span></td>
+            <td><span>5</span></td>
+            <td><span>6</span></td>
+            <td><span>7</span></td>
+            <td><span>8</span></td>
+            <td><span>9</span></td>
+            <td class="saturday"><span>10</span></td>
+          </tr>
+          <tr>
+            <td class="sunday"><span>11</span></td>
+            <td><span>12</span></td>
+            <td><span>13</span></td>
+            <td><span>14</span></td>
+            <td><span>15</span></td>
+            <td><span>16</span></td>
+            <td class="saturday"><span>17</span></td>
+          </tr>
+          <tr>
+            <td class="sunday"><span>18</span></td>
+            <td><span>19</span></td>
+            <td><span>20</span></td>
+            <td><span>21</span></td>
+            <td><span>22</span></td>
+            <td><span>23</span></td>
+            <td class="saturday"><span>24</span></td>
+          </tr>
+          <tr>
+            <td class="sunday"><span>25</span></td>
+            <td><span>26</span></td>
+            <td><span>27</span></td>
+            <td><span>28</span></td>
+            <td><span>29</span></td>
+            <td><span>30</span></td>
+            <td class="saturday"><span>31</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <p class="lemain">결혼식이 <span id="due-date"></span></p>
+    </div>
+
+    <div class="text family-info">
+      <div class="parent">
+        <span id="male-father-deceased"></span>
+        <span id="male-father">박진석</span>
+        <span> · </span>
+        <span id="male-mother-deceased"></span>
+        <span id="male-mother">안명숙</span>
+        <span> 의 </span>
+      </div>
+      <div class="relation">
+        <span id="male-relation">아들</span>
+      </div>
+      <div class="we">
+        <span class="name male">수민</span>
+      </div>
+
+      <div class="parent">
+        <span id="female-father-deceased"></span>
+        <span id="female-father">차의진</span>
+        <span> · </span>
+        <span id="female-mother-deceased"></span>
+        <span id="female-mother">김선미</span>
+        <span> 의 </span>
+      </div>
+      <div class="relation">
+        <span id="female-relation">딸</span>
+      </div>
+      <div class="we">
+        <span class="name female">슬기</span>
+      </div>
+    </div>
+  </section>
+  <section id="fourth">
+    <div class="title">
+      <p class="text">photo</p>
+      <span class="disc">옆으로 넘기면 더 많은 사진을 보실 수 있습니다.</span>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400051.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400050.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400098.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400054.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400095.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400092.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400056.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400057.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400052.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400090.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400061.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400096.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400062.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400065.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400091.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400066.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400089.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400069.jpeg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400094.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/1695508400097.jpg" alt="">
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <section id="fifth">
+    <div class="title">
+      <p class="text">오시는길</p>
+    </div>
+
+    <div class="address">
+      <p>서울특별시 강남구 선릉로 757</p>
+      <p>더 채플앳 논현 6F 라포레홀</p>
+    </div>
+
+    <div class="map">
+      <img src="/wedding/img/map/map.png" alt="the chapel at address map">
+    </div>
+
+    <p class="disc">아래 아이콘을 클릭하시면 앱으로 연결됩니다</p>
+    <div class="map-link">
+      <a class="naver" href="nmap://search?query=%EB%8D%94%EC%B1%84%ED%94%8C%EC%95%B3%EB%85%BC%ED%98%84">
+        <img src="/wedding/img/map/map_naver.png" alt="naver link">
+        <span>네이버지도</span>
+      </a>
+      <a class="kakao" href="kakaomap://search?q=%EB%8D%94%EC%B1%84%ED%94%8C%EC%95%B3%EB%85%BC%ED%98%84&p=37.5051234767743,127.034426154004">
+        <img src="/wedding/img/map/map_kakao.png" alt="kakao link">
+        <span>카카오지도</span>
+      </a>
+      <a class="tmap" href="tmap://search?name=%EB%8D%94%EC%B1%84%ED%94%8C%EC%95%B3%EB%85%BC%ED%98%84">
+        <img src="/wedding/img/map/map_tmap.png" alt="tmap link">
+        <span>티맵</span>
+      </a>
+    </div>
+
+    <div class="guide">
+
+      <table>
+        <tr>
+          <th>주차</th>
+          <td class="no-border">내부 150대 (90분), 외부 300대 (150분 무료)
+            <p class="attention">* 만차 시 웨딩홀 입구에서 발렛(무료)으로 외부 주차장에 주차해드리며, 최대 2시간 무료로 이용가능합니다.</p>
+          </td>
+        </tr>
+      </table>
+
+      <details>
+        <summary class="fit-summary">대중교통 이용시</summary>
+        <table>
+          <tr>
+            <th>버스</th>
+            <td>간선 147, 463 지선 4211 광역 3600, 9600</td>
+          </tr>
+          <tr>
+            <th>지하철</th>
+            <td>9호선 언주역 7번 출구 정면 방향으로 150m</td>
+          </tr>
+          <tr>
+            <th>지하철</th>
+            <td>2호선 역삼역 6번 출구 좌측 방향으로 450m</td>
+          </tr>
+        </table>
+      </details>
+
+    </div>
+  </section>
+  <section id="sixth">
+    <div class="title">
+      <p class="text">마음 전하실 곳</p>
+    </div>
+
+    <div class="detail-wrap">
+      <details>
+        <summary>신랑 측 계좌번호</summary>
+        <div class="bank-info">
+          <div>
+            <span class="name">혼주 박진석</span>
+            <span class="account copy" data-clipboard-text="농협 221010-52-229814">농협 221010-52-229814</span>
+          </div>
+          <button class="outline copy" type="button" data-clipboard-text="농협 221010-52-229814">복사</button>
+          <div>
+            <span class="name">혼주 안명숙</span>
+            <span class="account copy" data-clipboard-text="농협 302-3035-7642-81">농협 302-3035-7642-81</span>
+          </div>
+          <button class="outline copy" type="button" data-clipboard-text="농협 302-3035-7642-81">복사</button>
+          <div>
+            <span class="name">신랑 박수민</span>
+            <span class="account copy" data-clipboard-text="국민 519702-01-200268">국민 519702-01-200268</span>
+          </div>
+          <button class="outline copy" type="button" data-clipboard-text="국민 519702-01-200268">복사</button>
+        </div>
+      </details>
+      <details>
+        <summary>신부 측 계좌번호</summary>
+        <div class="bank-info">
+          <div>
+            <span class="name">혼주 차의진</span>
+            <span class="account copy" data-clipboard-text="신한 110-272-700882">신한 110-272-700882</span>
+          </div>
+          <button class="outline copy" type="button" data-clipboard-text="신한 110-272-700882">복사</button>
+          <div>
+            <span class="name">혼주 김선미</span>
+            <span class="account copy" data-clipboard-text="신한 110-168-302027">신한 110-168-302027</span>
+          </div>
+          <button class="outline copy" type="button" data-clipboard-text="신한 110-168-302027">복사</button>
+          <div>
+            <span class="name">신부 차슬기</span>
+            <span class="account copy" data-clipboard-text="우리 1002-645-505326">우리 1002-645-505326</span>
+          </div>
+          <button class="outline copy" type="button" data-clipboard-text="우리 1002-645-505326">복사</button>
+        </div>
+      </details>
+    </div>
+
+    <p class="flower-info">🕊️ 화환은 좋은 마음만 감사히 받겠습니다.</p>
+
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.1/kakao.min.js" integrity="sha384-kDljxUXHaJ9xAb2AzRd59KxjrFjzHa5TAoFQ6GbYTCAG0bjM55XohjjDT7tDDC01" crossorigin="anonymous"></script>
+    <script>
+      Kakao.init('23dd515675d853c3578a07b38d7b30ee');
+    </script>
+    <div class="share">
+      <a id="kakao" href="javascript:void(0)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 191.94">
+          <g>
+            <polygon class="cls-1" points="76.01 89.49 87.99 89.49 87.99 89.49 82 72.47 76.01 89.49"></polygon>
+            <path class="cls-1" d="M104,0C46.56,0,0,36.71,0,82c0,29.28,19.47,55,48.75,69.48-1.59,5.49-10.24,35.34-10.58,37.69,0,0-.21,1.76.93,2.43a3.14,3.14,0,0,0,2.48.15c3.28-.46,38-24.81,44-29A131.56,131.56,0,0,0,104,164c57.44,0,104-36.71,104-82S161.44,0,104,0ZM52.53,69.27c-.13,11.6.1,23.8-.09,35.22-.06,3.65-2.16,4.74-5,5.78a1.88,1.88,0,0,1-1,.07c-3.25-.64-5.84-1.8-5.92-5.84-.23-11.41.07-23.63-.09-35.23-2.75-.11-6.67.11-9.22,0-3.54-.23-6-2.48-5.85-5.83s1.94-5.76,5.91-5.82c9.38-.14,21-.14,30.38,0,4,.06,5.78,2.48,5.9,5.82s-2.3,5.6-5.83,5.83C59.2,69.38,55.29,69.16,52.53,69.27Zm50.4,40.45a9.24,9.24,0,0,1-3.82.83c-2.5,0-4.41-1-5-2.65l-3-7.78H72.85l-3,7.78c-.58,1.63-2.49,2.65-5,2.65a9.16,9.16,0,0,1-3.81-.83c-1.66-.76-3.25-2.86-1.43-8.52L74,63.42a9,9,0,0,1,8-5.92,9.07,9.07,0,0,1,8,5.93l14.34,37.76C106.17,106.86,104.58,109,102.93,109.72Zm30.32,0H114a5.64,5.64,0,0,1-5.75-5.5V63.5a6.13,6.13,0,0,1,12.25,0V98.75h12.75a5.51,5.51,0,1,1,0,11Zm47-4.52A6,6,0,0,1,169.49,108L155.42,89.37l-2.08,2.08v13.09a6,6,0,0,1-12,0v-41a6,6,0,0,1,12,0V76.4l16.74-16.74a4.64,4.64,0,0,1,3.33-1.34,6.08,6.08,0,0,1,5.9,5.58A4.7,4.7,0,0,1,178,67.55L164.3,81.22l14.77,19.57A6,6,0,0,1,180.22,105.23Z"></path>
+          </g>
+        </svg>
+        카카오톡 링크 공유하기
+      </a>
+
+      <script>
+        Kakao.Share.createDefaultButton({
+          container: '#kakao',
+          objectType: 'feed',
+          content: {
+            title: '박수민 ♡ 차슬기 결혼합니다!',
+            description: '8월 4일 일요일 오후 4시 더채플앳논현 6F 라포레홀',
+            imageUrl: 'https://ppyog-image-bucket.s3.ap-northeast-2.amazonaws.com/wedding/20240430_smp/DSCF8383.JPG',
+            link: {
+              webUrl: 'https://수민슬기.site',
+              mobileWebUrl: 'https://수민슬기.site',
+            },
+
+          },
+          buttons: [
+            {
+              title: '청첩장 열기',
+              link: {
+                webUrl: 'https://수민슬기.site',
+                mobileWebUrl: 'https://수민슬기.site',
+              },
+            }
+          ],
+        });
+      </script>
+
+      <a class="link copy" href="javascript:void(0)" data-clipboard-text="https://수민슬기.site">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title></title>
+          <path d="M17.3,13.35a1,1,0,0,1-.7-.29,1,1,0,0,1,0-1.41l2.12-2.12a2,2,0,0,0,0-2.83L17.3,5.28a2.06,2.06,0,0,0-2.83,0L12.35,7.4A1,1,0,0,1,10.94,6l2.12-2.12a4.1,4.1,0,0,1,5.66,0l1.41,1.41a4,4,0,0,1,0,5.66L18,13.06A1,1,0,0,1,17.3,13.35Z" fill="#464646"></path>
+          <path d="M8.11,21.3a4,4,0,0,1-2.83-1.17L3.87,18.72a4,4,0,0,1,0-5.66L6,10.94A1,1,0,0,1,7.4,12.35L5.28,14.47a2,2,0,0,0,0,2.83L6.7,18.72a2.06,2.06,0,0,0,2.83,0l2.12-2.12A1,1,0,1,1,13.06,18l-2.12,2.12A4,4,0,0,1,8.11,21.3Z" fill="#464646"></path>
+          <path d="M8.82,16.18a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42l6.37-6.36a1,1,0,0,1,1.41,0,1,1,0,0,1,0,1.42L9.52,15.89A1,1,0,0,1,8.82,16.18Z" fill="#464646"></path>
+        </svg>
+        청첩장 링크 복사하기
+      </a>
+    </div>
+
+    <div class="copyright">
+      <span>copyright © <span class="smp">smp</span> All rights reserved.</span>
+    </div>
+  </section>
+
+  <!--/* 공용 js */-->
+  <script type="text/javascript" src="clipboard/clipboard.min.js"></script>
+  <script type="text/javascript" src="swiper/js/swiper.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=23dd515675d853c3578a07b38d7b30ee&libraries=services"></script>
+  <script type="text/javascript" src="js/wedding.min.js"></script>
 </body>
+
 </html>
